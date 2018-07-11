@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 namespace ThirdTask {
     class Brackets {
 
-        public static Boolean CheckBracketPlacement(String line) {
-            Int32 indexInStr = 0;          
+        public static Int32 CheckBracketPlacement(String line) {        //-1 если все в порядке или номер символа в строке, где была обнаружена несостыковка
+            Int32 indexInStr = 0;
 
-            return ToCheckInLine(ref indexInStr, line, ' ');
+            if (ToCheckInLine(ref indexInStr, line, ' '))
+                return -1;
+            else
+                return indexInStr - 2;
         }
 
         private static Boolean ToCheckInLine(ref Int32 index, String str, char bracket) {
@@ -61,14 +64,22 @@ namespace ThirdTask {
                     while (index < str.Length && flag) {
                         if (str[index] == '(') {
                             index++;
-                            flag = ToCheckInLine(ref index, str, '(');
+                            if (index < str.Length)
+                                flag = ToCheckInLine(ref index, str, '(');
+                            else
+                                flag = false;
                         }
                         else if (str[index] == '[') {
                             index++;
-                            flag = ToCheckInLine(ref index, str, '[');
+                            if (index < str.Length)
+                                flag = ToCheckInLine(ref index, str, '[');
+                            else
+                                flag = false;
                         }
-                        else if (str[index] == ')' || str[index] == ']')
+                        else if (str[index] == ')' || str[index] == ']') {
+                            index++;
                             flag = false;
+                        }
 
                         index++;
                     }

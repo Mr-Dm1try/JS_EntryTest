@@ -15,10 +15,11 @@ namespace ThirdTask {
                 str = Console.ReadLine();
                 Console.WriteLine();
 
-                if (Brackets.CheckBracketPlacement(str))
+                Int32 result = Brackets.CheckBracketPlacement(str);
+                if (result == -1)
                     Console.WriteLine("Brackets are located correctly!");
                 else
-                    Console.WriteLine("Brackets are located incorrectly!");
+                    Console.WriteLine("Brackets are located incorrectly! Error detected at index " + result);
 
                 Console.WriteLine("Again? (y/n)");
                 sel = Console.ReadLine();
