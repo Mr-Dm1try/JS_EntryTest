@@ -1,0 +1,7 @@
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\bin\Debug\ThirdTask.exe.config
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\bin\Debug\ThirdTask.exe
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\bin\Debug\ThirdTask.pdb
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\obj\Debug\ThirdTask.csprojAssemblyReference.cache
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\obj\Debug\ThirdTask.csproj.CoreCompileInputs.cache
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\obj\Debug\ThirdTask.exe
+C:\Users\mrdmi\source\repos\JS_EntryTest\ThirdTask\ThirdTask\obj\Debug\ThirdTask.pdb
